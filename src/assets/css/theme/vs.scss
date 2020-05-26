@@ -1,0 +1,63 @@
+/* 白色主题 */
+.vs {
+    /* 左侧树形控件的顶部样式 */
+    .leftMenu {
+        .menu-hd {
+            background-color: #3a3d44;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+            .box-theme {
+                span {
+                    color: #6a6a6b;
+                }
+                .sel-theme {
+                    li {
+                        color: #cccedb;
+                    }
+                    li:hover {
+                        color: #e8e8e8;
+                    }
+                }
+            }
+        }
+    }
+    /* 树形控件样式 */
+    .sl-vue-tree {
+        color: #6c6c6c;
+    }
+    .sl-vue-tree.sl-vue-tree-root {
+        background-color: #282c34;
+    }
+    .sl-vue-tree-node-item:hover {
+        background-color: #cccedb;
+        color: #777779;
+    }
+    .sl-vue-tree-selected>.sl-vue-tree-node-item {
+        background-color: #e8e8e8;
+        color: #818181;
+    }
+    .sl-vue-tree-contextmenu>.sl-vue-tree-node-item {
+        background-color: #4c4c4c;
+    }
+
+    /* routerTab 样式叠加 */
+    .router-tab .router-tab-header {
+        background-color: #f3f3f3;
+        border: none;
+        box-shadow: 0px 1px 2px rgba(240, 240, 240, 0.5);
+    }
+    .router-tab .router-tab-nav .router-tab-item {
+        border: none;
+        background-color: #ececec;
+        color: #aaaaaa;
+        .tab-unsave {
+            background-color: #424242;
+        }
+        &.actived {
+            background-color: #2e3032;
+            color: #fff;
+            .tab-unsave {
+                background-color: #eeeeee;
+            }
+        }
+    }
+}

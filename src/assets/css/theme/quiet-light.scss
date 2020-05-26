@@ -1,0 +1,44 @@
+/* 安静浅色主题 */
+.quiet-light {
+    /* 树形控件样式 */
+    .leftMenu .menu-hd {
+        background-color: #ede8ef;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .sl-vue-tree {
+        color: #6c6c6c;
+    }
+    .sl-vue-tree.sl-vue-tree-root {
+        background-color: #282c34;
+    }
+    .sl-vue-tree-node-item:hover {
+        background-color: #e0e0e0;
+        color: #808080;
+    }
+    .sl-vue-tree-selected>.sl-vue-tree-node-item {
+        background-color: #d3dbcd;
+        color: #7e7f7d;
+    }
+
+    /* routerTab 样式叠加 */
+    .router-tab .router-tab-header {
+        background-color: #f3f3f3;
+        border: none;
+        box-shadow: 0px 1px 2px rgba(234, 234, 234, 0.5);
+    }
+    .router-tab .router-tab-nav .router-tab-item {
+        border: none;
+        background-color: #ececec;
+        color: #aaaaaa;
+        .tab-unsave {
+            background-color: #424242;
+        }
+        .actived {
+            background-color: #282c34;
+            color: #fff;
+            .tab-unsave {
+                background-color: #eeeeee;
+            }
+        }
+    }
+}

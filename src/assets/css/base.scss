@@ -1,0 +1,111 @@
+/* 树形控件 */
+.leftMenu {
+    position: relative;
+    padding-top: 40px;
+    width: 280px;
+    height: 100%;
+    overflow: hidden;
+    .menu-hd {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 280px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #3a3d44;
+        font-size: 12px;
+        color: #fff;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .box-theme {
+            width: 90px;
+            text-align: center;
+            position: relative;
+            cursor: default;
+            span {
+                color: #6a6a6b;
+                cursor: default;
+            }
+            .sel-theme {
+                display: none;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 34px;
+                width: 90px;
+                margin: 0;
+                padding: 0 10px;
+                background-color: #32353c;
+                box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+                li {
+                    display: block;
+                    height: 34px;
+                    line-height: 34px;
+                    text-align: center;
+                    font-size: 12px;
+                    color: #cccedb;
+                    border-top: 1px dashed #fff;
+                }
+                li:first-child {
+                    border-top: none;
+                }
+                li:hover {
+                    color: #e8e8e8;
+                }
+            }
+        }
+        .box-theme:hover {
+            .sel-theme {
+                display: block;
+            }
+        }
+    }
+    .sl-vue-tree {
+        font-size: 12px;
+        font-family: "Consolas, 'Courier New', monospace";
+        color: #6c6c6c;
+    }
+    .sl-vue-tree.sl-vue-tree-root {
+        border: none;
+        border-radius: 0;
+    }
+    .sl-vue-tree-node-item {
+        line-height: 25px;
+        border: none;
+    }
+    .sl-vue-tree-title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .sl-vue-tree-title .sl-vue-tree-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .sl-vue-tree-title-text {
+        margin-left: 5px;
+    }
+}
+
+/* routerTab 样式 */
+.router-tab-container {
+    overflow-y: hidden;
+    background-color: #1e1e1e;
+}
+/* routerTab 页面切换不加过渡效果 */
+.page-fade .enter-active, .page-fade .leave-active, .page-fade .enter, .page-fade .leave-to {
+    opacity: 1;
+}
+.tab-scale .enter-active, .tab-scale .leave-active, .tab-scale .enter, .tab-scale .leave-to {
+    opacity: 1;
+}
+
+.monaco-editor {
+    height: 100%!important;
+    overflow: hidden;
+}
